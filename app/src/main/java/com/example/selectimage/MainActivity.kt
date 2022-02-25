@@ -61,13 +61,7 @@ class MainActivity : AppCompatActivity() {
     private fun btnSelectCameraClicked() {
         btnImageFromCamera.setOnClickListener {
             PermissionManager.requestPermission(this) {
-                tempImageUri = FileProvider.getUriForFile(
-                    this,
-                    AUTHORITY,
-                    FileManager.createImageFile(this).also {
-                        tempImageFile = it
-                    })
-
+                tempImageUri = FileProvider.getUriForFile(this, AUTHORITY, FileManager.createImageFile(this).also { tempImageFile = it })
                 cameraLauncher.launch(tempImageUri)
             }
         }
