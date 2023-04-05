@@ -15,4 +15,4 @@ Connect an Android device to your computer or create a virtual device using the 
 Run the application on the device by clicking on the "Run" button in Android Studio.
 Once the application is running on the device, you can select an image from the photo gallery by clicking on the "Select Image" button. Alternatively, you can take a new photo using the device's camera by clicking on the "Take Photo" button. The selected or captured image will be displayed in the ImageView below.
 
-If you encounter a bug, please open an issue.
+Please open an issue if you encounter any issues or bugs.
